@@ -1,0 +1,64 @@
+.filter{
+    margin: 1em;
+}
+
+.filter__title{
+    margin: 0.5em 0;
+    
+    font-size: var(--font-label);
+    color: var(--medium-grey);
+}
+
+.filter__category{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5em 0;
+}
+
+.filter__subtitle{
+    font-size: var(--font-label);
+    color: var(--medium-grey);
+}
+
+.filter__open-btn{
+    color: var(--medium-grey);
+    cursor: pointer;
+
+    transition: all 1s;
+}
+
+.filter__hr{
+    margin-bottom: 0.5em;
+}
+
+.filter__option{
+    margin-bottom: 7px;
+}
+
+.filter__option-btn{
+    cursor: pointer;
+
+    color: var(--medium-grey);
+    font-size: var(--font-label);
+}
+
+.filter__close-btn{
+    font-size: var(--font-icon);
+    color: var(--medium-grey);
+    cursor: pointer;
+}
+
+.close{
+    transform: rotate(180deg);
+}
+
+.filter__category-container{
+    max-height: 300px;
+    overflow: hidden;
+
+    transition: all 1s;
+}
+
+.closed{
+    max-height: 40px;
+}

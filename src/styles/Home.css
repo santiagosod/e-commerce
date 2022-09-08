@@ -1,0 +1,75 @@
+.home__container__card{
+    margin: 0 auto 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1400px;
+}
+
+.filter__btn-container{
+    display: flex;
+    justify-content: end;
+    margin: auto;
+    padding-right: 3em;
+    max-width: 1024px;
+}
+
+.filter__btn{
+    cursor: pointer;
+
+    font-size: var(--font-icon);
+    color: var(--ligth-grey);
+}
+
+.icon__filter{
+    padding-right: 10px;
+}
+
+.filter__container{
+    position: fixed;
+    bottom: 0;
+    top: 63px;
+    left: 0;
+    width: 60%;
+    z-index: 100;
+    
+    background-color: var(--white);
+    border-right: 1px solid var(--ligth-grey);
+
+    transition: 0.3s;
+}
+
+.hide-filter{
+    left: 100%;
+}
+
+@media(min-width: 570px){
+    .filter__container{
+        width: 50%;
+    }
+}
+
+@media(min-width: 730px){
+    .filter__container{
+        width: 40%;
+    }
+}
+
+@media(min-width: 900px){
+    .filter__container{
+        top: 69px;
+    }
+}
+
+@media(min-width: 930px){
+    .filter__container{
+        width: 35%;
+    }
+}
+
+
+@media(min-width: 1200px){
+    .filter__container{
+        width: 30%;
+    }
+}

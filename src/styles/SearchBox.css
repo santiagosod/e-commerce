@@ -1,0 +1,31 @@
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: var(--search-box-width);
+    margin: auto;
+    padding: 1em 35px 1em 35px;
+}
+
+.search__input{
+    padding: 12px;
+    width: 100%;
+    
+    border: 1px solid var(--ligth-grey);
+    background-color: white;
+}
+
+.seacrch__btn{
+    display: flex;
+    padding: 14.5px;
+
+    background-color: var(--ligth-red);
+    color: var(--white);
+    font-size: var(--font-icon);
+}
+
+@media(min-width: 900px){
+    .seacrch__btn{
+        padding: 12.5px;
+    }
+}

@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Yantramanav&display=swap');
+
+:root {
+    --ligth-red: rgb(245, 86, 86);
+    --ligth-grey: rgba(0, 0, 0, 0.2);
+    --medium-grey: rgba(0, 0, 0, 0.7);
+    --white: rgb(255, 255, 255);
+    --black: rgba(0, 0, 0, 1);
+
+    --font-logo: 23px;
+    --font-icon: 18px;
+    --font-icon-login: 70px;
+    --font-span: 19px;
+    --font-span-login: 14px;
+    --font-label: 16px;
+    --font-h2: 25px;
+    --font-h3: 20px;
+    --font-weigth-logo: 700;
+
+    --card-home-width: 300px;
+    --search-box-width: 720px
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Yantramanav', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.app {
+    background-color: var(--white);
+
+    transition: 0.4s;
+    scroll-behavior: smooth;
+}
+
+.btn__dark-mode {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 0.3em;
+    margin: 1em;
+    z-index: 50;
+    cursor: pointer;
+
+    font-size: var(--font-logo);
+    border-radius: 100%;
+    background-color: var(--ligth-red);
+    color: var(--white);
+}
+
+.dark__mode {
+    --ligth-red: rgb(86, 195, 245);
+    --ligth-grey: rgba(255, 255, 255, 0.336);
+    --medium-grey: rgb(255, 255, 255);
+    --white: rgb(0, 0, 0);
+    --black: rgb(255, 255, 255);
+}
+
+.gallery__container {
+    height: 350px;
+    max-width: 574px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.productDetails {
+    max-width: 1024px;
+    padding: 0 1em;
+    margin: 0 auto;
+}
+
+.conatiner__similar-products {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.purchase__container {
+    margin: 0 auto;
+    padding: 1em 1em;
+    max-width: 724px;
+}
+
+@media(min-width: 900px) {
+    :root {
+        --font-logo: 28px;
+        --font-icon: 20px;
+        --font-icon-login: 80px;
+        --font-span: 22px;
+        --font-span-login: 16px;
+        --font-label: 18px;
+        --font-h2: 29px;
+        --font-h3: 24px;
+
+        --card-home-width: 370px;
+    }
+}
